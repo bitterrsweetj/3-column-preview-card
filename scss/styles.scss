@@ -1,21 +1,13 @@
-:root {
-  --bright-orange: hsl(31, 77%, 52%);
-  --dark-cyan: hsl(184, 100%, 22%);
-  --very-dark-cyan: hsl(179, 100%, 13%);
+@import "reset.scss";
 
-  --transparent-white: hsla(0, 0%, 100%, 0.75);
-  /* for paragraphs */
-  --very-light-gray: hsl(0, 0%, 95%);
-  /* for background, headings, buttons */
-}
+// color variables
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+$very-light-gray: hsl(0, 0%, 95%);
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
+//------------------------------------------------
 body {
   display: flex;
   flex-direction: column;
@@ -25,8 +17,8 @@ body {
   font-family: 'Lexend Deca', serif;
   line-height: 165%;
   font-size: 15px;
-  color: var(--transparent-white);
-  background-color: var(--very-light-gray);
+  color: $transparent-white;
+  background-color: $very-light-gray;
 }
 
 .container {
@@ -51,9 +43,9 @@ button {
   font-size: inherit;
   font-family: inherit;
   border-radius: 50px;
-  background-color: var(--very-light-gray);
+  background-color: $very-light-gray;
   mix-blend-mode: screen;
-  border: 2px solid var(--very-light-gray);
+  border: 2px solid $very-light-gray;
   transition: all .3s ease-in-out;
   margin-top: 5rem;
 }
@@ -64,21 +56,21 @@ button {
 }
 
 .sedans {
-  background-color: var(--bright-orange);
+  background-color: $bright-orange;
 }
 
 .suvs {
-  background-color: var(--dark-cyan);
+  background-color: $dark-cyan;
 }
 
 .luxury {
-  background-color: var(--very-dark-cyan);
+  background-color: $very-dark-cyan;
 }
 
 .title {
   font-family: 'Big Shoulders Display', sans-serif;
   font-size: 2.6rem;
-  color: var(--very-light-gray);
+  color: $very-light-gray;
   text-transform: uppercase;
   line-height: 165%;
   padding: 25px 0 15px;
@@ -87,17 +79,17 @@ button {
 .grid-item button:hover {
   cursor: pointer;
   background-color: transparent;
-  color: var(--very-light-gray);
+  color: $very-light-gray;
 }
 
 footer {
   font-size: .8rem;
   text-align: center;
-  color: var(--very-dark-cyan);
+  color: $very-dark-cyan;
 }
 
 footer a {
-  color: var(--dark-cyan);
+  color: $dark-cyan;
 }
 
 
